@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D3CFCF"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DescriptionFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/joy_rasmi"
+                    android:src="@drawable/qarshi"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+
+                    android:id="@+id/nomi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintWidth_percent="0.4"
+                    app:layout_constraintHeight_percent="0.4"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintVertical_bias="1"
+                    android:textColor="#CDDC39"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Qarshi shahrining markazi"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:id="@+id/icon"
+                    android:src="@drawable/ic_sharp_navigation_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    android:orientation="vertical"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+
+                    android:id="@+id/manzil"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:text="Qarshi shahrining markazi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+
+                    android:id="@+id/icon2"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:src="@drawable/ic_baseline_call_24"
+                    app:layout_constraintTop_toBottomOf="@id/manzil"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+
+                    android:id="@+id/telefonNomer"
+                    app:layout_constraintTop_toBottomOf="@id/manzil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/icon2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="+998 71 123 45 67"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+
+                    android:id="@+id/icon3"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_baseline_public_24"
+                    app:layout_constraintTop_toBottomOf="@id/telefonNomer"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+
+                    android:id="@+id/web_Link"
+                    app:layout_constraintTop_toBottomOf="@id/telefonNomer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/icon3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Mavjud emas"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/tarif"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="Ta'rif"
+                    android:textSize="22sp"
+                    android:layout_margin="5dp"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:background="#fff"
+            android:layout_width="350dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/izoh"
+                android:textColor="#000"
+                android:textStyle="italic"
+                android:layout_margin="10dp"
+                android:text="ФAРИШТA
+
+Чақалоқ туғилишига бир кун қолганда Аллоҳдан сўрабди:
+– Нега бу оламга келяпман? Мен ўзи нима қилишим керак:
+Яратган эгам шундай жавоб берибди:
+– Сенга фаришта ҳадя этаман. У доим ёнингда бўлади, ҳаммасини тушунтириб беради.
+– Уни қаердан топаман, ахир, унинг тилини ҳам билмайман-ку?
+– Фаришта сени ўз тилига ўргатади, турли бало-қазолардан асрайди.
+– Фариштамнинг исми нима?
+– Унинг исми муҳим эмас. Сен уни “ОНА” деб атайсан...
+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/mapss"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:context=".MapsActivity">
+            </androidx.fragment.app.FragmentContainerView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
